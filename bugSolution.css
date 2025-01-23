@@ -1,0 +1,13 @@
+The `calc()` function requires consistent units for operands. For percentage-based calculations, ensure that the base is clearly defined.  Consider using pixel values or other consistent units where possible to prevent unexpected results. Example:
+
+/* Incorrect usage */
+.element {
+  width: calc(100% - 50%); /* Inconsistent units */
+}
+
+/* Correct usage */
+.element {
+  width: calc(100% - 50px); /* Consistent units */
+  /* Or using em for example */
+  width: calc(100% - 2em); 
+}
